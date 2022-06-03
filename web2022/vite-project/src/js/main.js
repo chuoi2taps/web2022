@@ -11,18 +11,18 @@ function showProducts(products) {
     for (let i = 0; i < products.length; i++) {
         const product = products[i];
         result += `
-        <div class="item">
-            <div class="item-image">
-                <img src="${product.img}" alt="">
-            </div>
-            <div class="item-content">
-                <h3><a href="./detail.html?id=${product.id}">${product.name}</a></h3>
-                <div class="flex">
-                    <span>30 times</span>
-                    <span>snack</span>
-                </div>
-            </div>
+        <div class="column">
+        <a href=""><img src="${product.img}" class="rounded-3xl" alt="" /></a>
+        <h3 class="text-[#F54748] pt-5 font-bold">
+            <a href="">${product.name}</a>
+        </h3>
+        <div class="flex pt-4 items-start">
+            <span class=""><img src="img/Vector.png" alt="" /></span>
+            <h3 class="pl-1">30 Minutes</h3>
+            <span><img src="img/ForkKnife.png" alt="" class="pl-5" /></span>
+            <h3 class="pl-1">Snack</h3>
         </div>
+    </div>
         `;
     }
     // return
