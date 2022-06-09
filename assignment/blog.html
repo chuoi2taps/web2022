@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="max-w-7xl mx-auto m-3">
+          <ul class="md:flex justify-end space-x-8 hidden md:order-1 order-2">
+          <li><a href="blog.html" class="font-bold text-[#FF6464]">Blog</a></li>
+          <li><a href="work.html" class="font-bold hover:text-[#FF6464]">Works</a></li>
+          <li><a href="contact.html" target="_blank" class="font-bold hover:text-[#FF6464]">Contact</a></li>
+          </ul>
+      </div>
+      <div class="max-w-7xl mx-auto m-3">
+          <div class="flex justify-end md:hidden md:order-2 order-1">
+              <img src="list.svg" alt="" width="60">
+          </div>
+        </div>
+      </header>
+      <section class="blog px-5">
+        <div class="max-w-5xl mx-auto py-10 ">
+            <div class="py-5">
+                <h2 class="text-4xl font-bold">Blog</h2>
+            </div>
+            <div class="grid gap-8" id="blog-post">
+                
+            </div>
+        </div>
+      </section>
+      <footer class="py-10">
+        <div class="max-w-6xl mx-auto px-5">
+          <div class="flex justify-center space-x-8">
+            <a href=""><img src="src/svg/facebook.svg" alt=""></a>
+          <a href=""><img src="src/svg/instagram.svg" alt=""></a>
+          <a href=""><img src="src/svg/twitter.svg" alt=""></a>
+          <a href=""><img src="src/svg/linkedin.svg" alt=""></a>
+          </div>
+          <p class="text-center">Copyright ©2020 All rights reserved</p>
+        </div>
+      </footer>
+      <script src="src/js/blog.js" type="module"></script>
+</body>
+</html>

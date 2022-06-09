@@ -6,9 +6,7 @@ import { categoriesList } from "./data";
 const id = new URLSearchParams(window.location.search).get("id");
 
 // Tim trong mang, neu co id nao trung voi id trong mang thi tra ve ket qua
-console.log("id", id);
 const product = productList.find((item) => item.id == id);
-console.log("product", product);
 const result = `
     <div class="text-center md:text-left max-w-[620px]">
     <h2 class="text-3xl md:text-5xl font-black pb-5">${product.name}</h2>
